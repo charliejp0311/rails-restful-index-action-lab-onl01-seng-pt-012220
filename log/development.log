@@ -415,3 +415,20 @@ rack (2.0.8) lib/rack/handler/webrick.rb:86:in `service'
   Rendering /var/lib/gems/2.7.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /var/lib/gems/2.7.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (24.1ms)
   Rendered /var/lib/gems/2.7.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (309.1ms)
+Started GET "/" for 98.223.205.27 at 2020-05-28 23:12:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.2/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 14ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for 98.223.205.27 at 2020-05-28 23:12:40 +0000
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 277ms (Views: 273.6ms | ActiveRecord: 0.6ms)
+
+
